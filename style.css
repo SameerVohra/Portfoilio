@@ -2,7 +2,16 @@ div{
     display: block;
 }
 
+.navv{
+    position: fixed;
+    top: 3vh;
+    z-index: 0;
+}
+
 .nav-bar{
+    display: inline;
+    background-color: white;
+    position: fixed;
     border-radius: 40px;
     box-shadow: 0px 2px 11px black;
     height: 40px;
@@ -10,6 +19,8 @@ div{
     padding-right: 0;
     width: 380px;
     margin-left: 35%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-list{
@@ -17,15 +28,19 @@ div{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin-left: -16px;
+    margin-left: -11px;
     margin-right: 20px;
-    margin-top: 11px;
+    margin-top: 11px;   
+     /* position: fixed; */
+
 }
 
 .nav-list li{
     font-size: 80%;
-    margin-top: 4%;
-    font-weight: 400;
+    font-weight: 100;
+    align-items: center;
+    margin: 8px;
+    margin-top: -8px
 }
 
 .nav-bar a{
@@ -34,54 +49,279 @@ div{
 }
 
 .nav-bar a:hover{
-    color: #C0DF85;
+    color: #14b8a6;
 }
 
 #image img{
-    display: block;
-    height: 65px;
-    width: 65px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    position: absolute;
-    top: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .about{
-    margin-left: 150px;
-    position: relative ;
-    z-index: 0;
-    top: 20px;
-    height: auto;
-    font-size: 50px;
-    font-weight: 700;
-    float: left;
-    width: 45%;
-    margin-top: 100px;
+    margin-top: 5%;
+    width: 600px;
+    margin-left: 10%;
+}
+
+.about span{
+    display: inline-block;
+    margin-top: 10%;
+    font-size: 45px;
+    width: 600px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Pangolin', cursive;
 }
 
 .about p{
-    font-size: 15px;
-    font-weight:lighter;
-    width: auto;
+    font-size: 12px;
+    font-weight: 100;
+    width: 450px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
-.image img{
-    margin-top: 100px;
-    height: 440px;
-    width: 430px;
-    border-radius: 50%;
+.about img{
+    display: inline;
+    height: 350px;
+    width: 300px;
+    border-radius: 30%;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    z-index: -1;
+}
+
+.about img:hover{
+    content: url("./Photos/Photo.png") no-repeat;
+}
+
+.contact{
+    width: auto;
+    display: flex;
+    justify-content: left;
+    margin-left: 9%;
 }
 
 .contact img{
     height: 30px;
     width: 30px;
-    display: inline;
-    padding: 20px 25px;
-    align-items: center;
-    margin: 2px;
-    margin-top: 30px;
+    padding: 30px;
 }
 
 .contact img:hover{
-    transform: scale(1.5)
+    transform: scale(1.2);
+}
+
+.actual-resume{
+    background-color: white;
+    height: 275px;
+    width: 275px;
+    border-radius: 5%;
+    display: block;
+    margin-left: 39.9%;
+}
+
+.actual-resume h3{
+    text-align:center ;
+    font-size: 15px;
+    font-family: 'Pangolin', cursive;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.actual-resume img{
+    height: 150px;
+    width: 150px;
+    margin-left: 22%;
+    margin-top: 10%;
+}
+
+.actual-resume a{
+    text-decoration: none;
+    color: black;
+    margin-left: 25%;
+    font-size: 25px;
+    font-family: 'Lumanosimo', cursive;
+}
+
+.actual-resume:hover{
+    background-color: whitesmoke    ;
+}
+
+.actual-resume a:hover{
+    color: #14b8a6;
+    font-weight: 700;
+    text-decoration:underline;
+}
+
+.projects h2{
+    text-align: center;
+    font-size: 52px;
+    text-decoration: underline double;
+    font-family: 'Lilita One', cursive;
+    color: rgb(198, 165, 122);
+}
+
+.projects-cards{
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+
+.projects-card1{
+    height: 300px;
+    width: 250px;
+    background-color: orange;
+    display: inline-block;
+}
+.projects-card2{
+    height: 300px;
+    width: 250px;
+    background-color: red;
+    display: inline-block;
+}
+.projects-card3{
+    height: 300px;
+    width: 250px;
+    background-color: yellow;
+    display: inline-block;
+}
+.projects-card4{
+    height: 300px;
+    width: 250px;
+    background-color: green;
+    display: inline-block;
+}
+
+.certificates h2{
+    text-align: center;
+    font-size: 52px;
+    text-decoration: underline double;
+    font-family: 'Lilita One', cursive;
+    color: rgb(198, 165, 122);
+}
+
+.certificate-cards{
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+
+.certificate1{
+    height: 300px;
+    width: 250px;
+    display: inline-block;
+    box-shadow: 0px 2px 10px black;
+}
+.certificate2{
+    height: 300px;
+    width: 250px;
+    box-shadow: 0px 2px 10px black;
+    display: inline-block;
+}
+.certificate3{
+    height: 300px;
+    width: 250px;
+    box-shadow: 0px 2px 10px black;
+    display: inline-block;
+}
+
+.certificate1 h4{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.certificate1 p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.certificate1 a{
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(82, 135, 116);
+}
+
+.certificate1 a h6{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 28%;
+}
+
+.certificate1 a:hover{
+    text-shadow: 0px 2px 14px black;
+}
+
+.certificate1:hover{
+    background-color: whitesmoke;
+}
+
+.certificate2 h4{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.certificate2 p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.certificate2 a{
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(82, 135, 116);
+}
+
+.certificate2 a h6{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.certificate2 a:hover{
+    text-shadow: 0px 2px 14px black;
+}
+
+.certificate2:hover{
+    background-color: whitesmoke;
+}
+
+.certificate3 h4{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.certificate3 p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.certificate3 a{
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(82, 135, 116);
+}
+
+.certificate3 a h6{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.certificate3 a:hover{
+    text-shadow: 0px 2px 14px black;
+}
+
+.certificate3:hover{
+    background-color: whitesmoke;
 }
