@@ -88,7 +88,6 @@ div{
 }
 
 #about img{
-    display: inline;
     height: 350px;
     width: 300px;
     border-radius: 30%;
@@ -198,6 +197,7 @@ div{
     position: relative;
     top: -10%;
     text-align: center;
+    z-index: -1;
 }
 
 .projects-card p{
@@ -292,6 +292,7 @@ div{
 #experience h3{
     margin-left: 10%;
     font-size: 30px;
+    z-index: -1;
 }
 
 #exp-card{
@@ -361,3 +362,26 @@ footer ul a:hover{
     border-bottom: solid #FF7F6B  2px ;
     color: #14b8a6;
 }
+
+@media(max-width: 680px){
+    #about{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #about span{
+        font-size: 25px;
+        width: 70%;
+    }
+    #about p{
+        font-size: 20px;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media(max-width: 1024px){
+    #about img{
+        margin-top: -20%;
+    }
+}
+
