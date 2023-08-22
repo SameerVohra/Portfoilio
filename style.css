@@ -4,6 +4,7 @@ body{
     user-select: none;
 }
 
+
 /*NAV-BAR START*/
 .nav-container{
     display: flex;
@@ -12,8 +13,8 @@ body{
 }
 
 .nav-container > .image-logo img{
-    height: 80px;
-    width: 90px;
+    height: 50px;
+    width: 60px;
     border-radius: 50%;
 }
 
@@ -32,7 +33,7 @@ body{
     color: white;
     text-decoration: none;
     padding: 15px;
-    font-size: 20px;
+    font-size: 17px;
     transition:all 600ms ease-in-out;
 }
 
@@ -60,7 +61,7 @@ body{
     font-size: 50px;
     font-family: 'Pacifico', cursive;
     margin-left: 5%;
-    width: 95%;
+    width: 100%;
 }
 
 .about-h3 h3 span{
@@ -71,7 +72,7 @@ body{
 
 .para{
     margin-top: -2%;
-    width: 90%;
+    width: 95%;
     margin-left: 5%;
 }
 
@@ -89,25 +90,32 @@ body{
 }
 
 .container img{
-    height: 500px;
+    height: 380px;
+    width: 350px;
     border-radius: 150px;
-    position: relative;
-    -webkit-mask-image: url("./Assets/PngItem_105219.png");
-    -webkit-mask-size: contain;
-    -webkit-mask-repeat: repeat;
+    position: static;
+    /* position: relative; */
+    /* -webkit-mask-image: url("./Assets/PngItem_105219.png");
+    -webkit-mask-size:contain;
+    -webkit-mask-repeat: repeat; */
 }
 /*About section ends*/
 
 /*Quick Links section starts*/
 
+.quickContainer{
+    padding: 10px;
+}
+
 .quicklinks{
-    width: 100%;
+    width: fit-content;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 70px;
-    align-items: center;
+    align-items:center;
     align-content: center;
-    position: static;
+    position:relative;
+    margin-left:3.2%;
 }
 
 .quicklinks a img{
@@ -116,7 +124,7 @@ body{
 }
 
 .quicklinks a img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /*Quick Links section ends*/
@@ -137,32 +145,36 @@ h1{
     flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
-    gap: 50px;
+    gap: 10px;
 }
 
 .cert-container > .box{
-    display: block;
+    display: inline-block;
     box-shadow: 1px 7px 10px black;
-    height: 300px;
-    width: 250px;
+    height: auto;
+    width: 200px;
     padding: 30px;
     border-radius: 20px;
+    transition: all 300ms ease-in-out 200ms;
+    opacity: 0.5;
 }
 
 .cert-container > .box > .title a{
     text-decoration: none;
     color: #219EBC;
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Acme', sans-serif;
     text-align: center;
 }
 
 .cert-container > .box > .by{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    opacity:1;
 }
-.cert-container > .box > .title a:hover{
-    text-shadow: 2px 4px 10px #023047;
+.box:hover{
+    transform: scale(1.05);
+    opacity: 1;
 }
 
 /*Certificates section ends*/
@@ -185,6 +197,7 @@ h1{
     margin: 0;
     padding: 0;
     border-radius: 20px;
+    transition: all 200ms ease-in-out 300ms;
 }
 
 .card h2{
@@ -216,6 +229,10 @@ h5{
 .card a:hover{
     text-shadow: 0px 1px 10px orange;
     text-decoration: double underline orange;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 /*Project Section Ends*/
