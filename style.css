@@ -2,6 +2,10 @@ body{
     margin: 0;
     padding: 0;
     user-select: none;
+    /* background-color: #d4a373; */
+    /* background-color: #dde5b6 ; */
+    /* background-color: #ccd5ae; */
+    background-color: #E0DFDD;
 }
 
 
@@ -120,7 +124,7 @@ body{
 
 .quicklinks a img{
     height: 30px;
-    transition: all 500ms ease-in-out 50ms;
+    transition: all 250ms ease-out;
 }
 
 .quicklinks a img:hover{
@@ -137,26 +141,26 @@ h1{
     justify-content: center;
     font-size: 60px;
     font-family: 'Bricolage Grotesque', sans-serif;
-    color: #FFB703;
+    color: #435334;
 }
 
 .cert-container{
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    /* padding: 20px; */
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .cert-container > .box{
     display: inline-block;
-    box-shadow: 1px 7px 10px black;
-    height: auto;
+    height: 200px;
     width: 200px;
     padding: 30px;
-    border-radius: 20px;
-    transition: all 300ms ease-in-out 200ms;
-    opacity: 0.5;
+    border-radius: 40px;
+    transition: all 300ms ease-in-out;
+    /* border: 1px solid #ffc300; */
+    background-color: #CEDEBD;
 }
 
 .cert-container > .box > .title a{
@@ -170,11 +174,12 @@ h1{
 .cert-container > .box > .by{
     display: flex;
     justify-content: center;
-    opacity:1;
 }
 .box:hover{
     transform: scale(1.05);
-    opacity: 1;
+    /* background-image: linear-gradient(135deg, #ffba08, #faa307, #f48c06, #e85d04); */
+    background-color: #9EB384;
+    box-shadow: 15px 20px 0px 0px black;
 }
 
 /*Certificates section ends*/
@@ -191,26 +196,27 @@ h1{
 
 .card{
     display: block;
-    box-shadow: 1px 7px 10px black;
     height: auto;
     width: 400px;
     margin: 0;
-    padding: 0;
-    border-radius: 20px;
-    transition: all 200ms ease-in-out 300ms;
+    padding: 20px;
+    border-radius: 40px;
+    transition: all 200ms ease-in-out;
+    background-color: #CEDEBD;
+
 }
 
 .card h2{
     font-size: 20px;
-    text-align: left;
-    color: #73bfb8;
+    text-align: center;
+    color: #435334;
     margin-left: 3.5%;
 }
 
 .card p{
     text-align: center;
     font-family: 'Anton', sans-serif;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 h5{
@@ -218,21 +224,25 @@ h5{
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 100;
     text-align: center;
+    color: #435334;
 }
 
 .card a{
     text-decoration: none;
-    color: #219EBC;
+    color: #606C5D;
     font-family: 'Montserrat', sans-serif;
-}
+} 
 
-.card a:hover{
-    text-shadow: 0px 1px 10px orange;
-    text-decoration: double underline orange;
-}
+ .card a:hover{
+    text-shadow: 0px 2px 10px black;
+} 
 
 .card:hover{
     transform: scale(1.05);
+    /* background-image: linear-gradient(135deg, #ffba08, #faa307, #f48c06, #e85d04); */
+    box-shadow: 15px 20px 0px 0px black;
+    background-color: #9EB384;
+
 }
 
 /*Project Section Ends*/
@@ -251,11 +261,13 @@ h5{
 }
 
 .ex-card{
+    background-color: #CEDEBD;
     height: auto;
     width: 230px;
     display: inline;
-    box-shadow: 0px 2px 10px black;
+    /* box-shadow: 0px 2px 10px black; */
     border-radius: 8px;
+    transition: all 200ms ease-in-out;
 }
 
 .ex-card h2{
@@ -280,6 +292,12 @@ h5{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     margin-top: 20%;
+}
+
+.ex-card:hover{
+    transform: scale(1.05);
+    box-shadow: 15px 20px 0px 0px black;
+    background-color: #9EB384;
 }
 
 /*FOOTER*/

@@ -47,7 +47,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 86vh;
+    align-content: center;
+    padding: 49px;
     background-color: #ffb703;
 }
 
@@ -97,3 +98,47 @@ body{
     text-decoration: none;
     color: black;
 }
+
+/*Connection about ends*/
+
+/*Footer Starts*/
+
+footer{
+    /* margin-top: 2%; */
+    background-color: rgb(161, 121, 47);
+}
+
+.footer-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bar > .foot-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bar > .foot-nav li
+{
+    display: inline;
+    list-style-type: none;
+}
+
+.footer-bar>.foot-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: all 300ms ease 100ms
+}
+
+footer span{
+    align-self: center;
+    font-family: 'Barriecito', cursive;
+}
+
+.footer-bar>.foot-nav a:hover{
+    color: rgb(100, 197, 164);
+    text-shadow: 0px 4px 10px black;
+    font-size: 15px;
+}
+/*Footer Ends*/
