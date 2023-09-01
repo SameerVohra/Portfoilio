@@ -2,12 +2,13 @@ body{
     margin: 0;
     padding: 0;
     user-select: none;
-    /* background-color: #d4a373; */
-    /* background-color: #dde5b6 ; */
-    /* background-color: #ccd5ae; */
     background-color: #E0DFDD;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
 
 /*NAV-BAR START*/
 .nav-container{
@@ -25,7 +26,7 @@ body{
 .nav-container > .nav-bar{
     display: flex;
     align-self: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .nav-container > .nav-bar li{
@@ -52,13 +53,13 @@ body{
 .container-main{
     display: flex;
     flex-direction: column;
-    margin: auto 0;
+    margin: auto;
     padding: 0;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 4fr 0.5fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .about-h3 h3{
@@ -75,8 +76,7 @@ body{
 }
 
 .para{
-    margin-top: -2%;
-    width: 95%;
+    width: 100%;
     margin-left: 5%;
 }
 
@@ -108,18 +108,18 @@ body{
 /*Quick Links section starts*/
 
 .quickContainer{
-    padding: 10px;
+    position: relative;
+    /* padding: 10px; */
 }
 
 .quicklinks{
-    width: fit-content;
+    width: auto;
     display: flex;
     justify-content: flex-start;
-    gap: 70px;
+    gap: 50px;
     align-items:center;
     align-content: center;
-    position:relative;
-    margin-left:3.2%;
+    margin-left:3.3%;
 }
 
 .quicklinks a img{
@@ -147,7 +147,7 @@ h1{
 .cert-container{
     display: flex;
     flex-wrap: wrap;
-    /* padding: 20px; */
+    padding: 20px;
     justify-content: center;
     gap: 30px;
 }
@@ -177,9 +177,8 @@ h1{
 }
 .box:hover{
     transform: scale(1.05);
-    /* background-image: linear-gradient(135deg, #ffba08, #faa307, #f48c06, #e85d04); */
     background-color: #9EB384;
-    box-shadow: 15px 20px 0px 0px black;
+    box-shadow: 1em 1.2em 0px 0px black;
 }
 
 /*Certificates section ends*/
@@ -240,7 +239,7 @@ h5{
 .card:hover{
     transform: scale(1.05);
     /* background-image: linear-gradient(135deg, #ffba08, #faa307, #f48c06, #e85d04); */
-    box-shadow: 15px 20px 0px 0px black;
+    box-shadow: 1em 1.2em 0px 0px black;
     background-color: #9EB384;
 
 }
@@ -296,7 +295,7 @@ h5{
 
 .ex-card:hover{
     transform: scale(1.05);
-    box-shadow: 15px 20px 0px 0px black;
+    box-shadow: 1em 1.2em 0px 0px black;
     background-color: #9EB384;
 }
 
